@@ -1,0 +1,180 @@
+{
+	"info": {
+		"_postman_id": "a906dd00-9145-484b-8da2-310628c29bb5",
+		"name": "API_Serverless",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "27605678",
+		"_collection_link": "https://interstellar-space-852883.postman.co/workspace/Seguros~d642ff66-47b5-458a-8ea5-3751c9aa182d/collection/27605678-a906dd00-9145-484b-8da2-310628c29bb5?action=share&source=collection_link&creator=27605678"
+	},
+	"item": [
+		{
+			"name": "HEALTH - PROXY",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					}
+				],
+				"url": {
+					"raw": "http://localhost:8080/health",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"health"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "GET - PROXY",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"url\": \"https://reqres.in/api/users?page=2\",\n    \"method\": \"GET\"\n}"
+				},
+				"url": {
+					"raw": "http://localhost:3000/api/proxy",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"proxy"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "POST - PROXY",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"url\": \"https://reqres.in/api/users\",\n    \"method\": \"POST\",\n    \"body\": {\n        \"name\": \"morpheus\",\n        \"job\": \"leader\"\n    }\n}"
+				},
+				"url": {
+					"raw": "http://localhost:3000/api/proxy",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"proxy"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "PUT - PROXY",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"url\": \"https://reqres.in/api/users/2\",\n    \"method\": \"PUT\",\n    \"body\": {\n        \"name\": \"morpheus\",\n        \"job\": \"zion resident\"\n    }\n}"
+				},
+				"url": {
+					"raw": "http://localhost:3000/api/proxy",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"proxy"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "PATCH - PROXY",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"url\": \"https://reqres.in/api/users/2\",\n    \"method\": \"PATCH\",\n    \"body\": {\n        \"name\": \"morpheus\",\n        \"job\": \"zion resident\"\n    }\n}"
+				},
+				"url": {
+					"raw": "http://localhost:3000/api/proxy",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"proxy"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "DELETE - PROXY",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"url\": \"https://reqres.in/api/users/2\",\n    \"method\": \"DELETE\"\n}"
+				},
+				"url": {
+					"raw": "http://localhost:3000/api/proxy",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"proxy"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
